@@ -28,13 +28,18 @@ h1 {
     margin: 2rem 0;
 }
 
-.profile-img {
+.circular-image {
     width: 200px !important;
     height: 200px !important;
     border-radius: 50% !important;
     object-fit: cover !important;
     overflow: hidden !important;
     flex-shrink: 0 !important;
+    display: block !important;
+}
+
+.profile .circular-image {
+    border-radius: 50% !important;
 }
 
 .bio {
@@ -154,7 +159,7 @@ h2 {
         gap: 1.5rem;
     }
 
-    .profile-img {
+    .circular-image {
         width: 150px !important;
         height: 150px !important;
     }
