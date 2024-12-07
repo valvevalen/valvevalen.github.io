@@ -148,25 +148,26 @@ h2 {
     .profile {
         display: grid;
         grid-template-areas: 
-            "title image"
-            "bio bio"
-            "social social";
+            "title"
+            "image"
+            "bio"
+            "social";
         gap: 1rem;
-        align-items: start;
+        justify-items: center;
     }
 
     h1 {
         grid-area: title;
         margin: 0;
         font-size: 1.8rem;
-        align-self: center;
+        text-align: center;
     }
 
     .circular-image {
         grid-area: image;
-        width: 80px;
-        height: 80px;
-        justify-self: end;
+        width: 150px;
+        height: 150px;
+        margin: 1rem 0;
     }
 
     .bio {
@@ -183,7 +184,8 @@ h2 {
         margin-top: 1rem;
     }
 
-    .social-links a {
-        display: inline;
+    /* Ocultar "Google" en móvil */
+    .google-text {
+        display: none;
     }
-} 
+}
