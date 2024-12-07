@@ -54,11 +54,13 @@ h1 {
     gap: 0.5rem;
     align-items: center;
     justify-content: center;
-    margin: 1rem 0;
 }
 
 .social-links a {
     text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    min-width: min-content;
 }
 
 .content {
@@ -182,6 +184,12 @@ h2 {
         justify-content: center;
         gap: 0.5rem;
         margin-top: 0.35rem;
+        align-items: baseline;
+    }
+
+    .social-links a {
+        display: inline-block;
+        text-align: center;
     }
 
     /* Ocultar "Google" en móvil */
