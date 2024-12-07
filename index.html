@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Àlex Valverde Valencia</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <main>
+        <h1>Àlex Valverde Valencia</h1>
+        <div class="profile">
+            <div class="bio">
+                <p>Technologist at UPF's Communication Department and PhD candidate on AI Literacy in Human-AI audiovisual creative processes. Associate professor on Semiotics and Generative AI audiovisual creation at UPF and BAU. General Coordinator of at the <a href="https://www.upf.edu/web/rainfilmfest" target="_blank" rel="noopener noreferrer">+RAIN Film Festival</a>, the first AI Film festival in Europe.</p>
+                <p>High performance athlete running 400m and 400m hurdles.</p>
+                <p>Barcelona based.</p>
+            </div>
+            <img src="img/profile.jpg" alt="Foto de perfil" class="profile-img">
+        </div>
+        
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/valverdevalencia/" target="_blank" rel="noopener noreferrer">LinkedIn</a> /
+            <a href="https://x.com/valvevalen" target="_blank" rel="noopener noreferrer">Twitter/X</a> /
+            <a href="https://scholar.google.com/citations?hl=ca&user=aWdKfpoAAAAJ" target="_blank" rel="noopener noreferrer">Google Scholar</a> /
+            <a href="mailto:alex.valverde@upf.edu">Email</a>
+        </div>
+
+        <h2>Research</h2>
+        <div class="content">
+            <div class="paper">
+                <h3 class="paper-title">
+                    <a href="https://www.raco.cat/index.php/Hipertext/article/view/413229" target="_blank" rel="noopener noreferrer">Self-effects in AI-mediated communication</a>
+                </h3>
+                <div class="paper-authors">Àlex Valverde Valencia</div>
+                <div class="paper-meta">Hipertext.net, n.26, 2023 [<a href="#" class="bibtex-link" onclick="toggleBibtex('paper1')">bibtex</a>]</div>
+                <div class="paper-description">
+                    A first conceptualization of the possible cognitive, emotional and behavioral self-effects that messages have on the senders themselves in the context of AI-mediated communication, with implications for digital well-being.
+                </div>
+            </div>
+        </div>
+
+        <h2>Teaching</h2>
+        <div class="content">
+            <div class="paper">
+                <h3 class="paper-title">Creation and digital authorship II (2024; 2025)</h3>
+                <div class="paper-authors">BAU, College of Arts and Design</div>
+                <div class="paper-meta">Bachelor degree in Design, mention in Audiovisual Design</div>
+                <div class="paper-description">
+                    Course focused on emerging formats and new technical approaches to audiovisual creation, involving interactive storytelling, co-creation with Generative AI and virtual reality.
+                </div>
+            </div>
+
+            <div class="paper">
+                <h3 class="paper-title">Analysis of Messages (2025)</h3>
+                <div class="paper-authors">Pompeu Fabra University (UPF)</div>
+                <div class="paper-meta">Bachelor degree in Advertising and Public Relations</div>
+                <div class="paper-description">
+                    First year course that introduces semiotics based on the exploration of the main analytical models of meaning generation and their application to different communication languages.
+                </div>
+            </div>
+
+            <div class="paper">
+                <h3 class="paper-title">Final Degree Project Supervisor (2024)</h3>
+                <div class="paper-authors">BAU, College of Arts and Design</div>
+                <div class="paper-meta">Bachelor degree in Design, mention in Audiovisual Design</div>
+                <div class="paper-description">
+                    Supervisor of 8 Final Degree Projects within audiovisual experimentation and creation including: AI-mediated advertising, speculative fiction for environmental awareness, documentary on local communities and an inmersive three level dystopian narrative.
+                </div>
+            </div>
+        </div>
+    </main>
+    <script>
+    function toggleBibtex(id) {
+        const bibtex = document.getElementById(id);
+        bibtex.style.display = bibtex.style.display === 'none' ? 'block' : 'none';
+        event.preventDefault();
+    }
+    </script>
+</body>
+</html> 
