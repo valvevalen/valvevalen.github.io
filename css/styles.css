@@ -23,21 +23,19 @@ h1 {
 
 .profile {
     display: flex;
-    gap: 3rem;
+    gap: 2rem;
     align-items: flex-start;
-    margin-bottom: 2rem;
+    margin: 2rem 0;
 }
 
 .profile-img {
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
-    object-fit: cover;
+    max-width: 300px;
+    height: auto;
+    border-radius: 5px;
 }
 
 .bio {
-    font-size: 1rem;
-    line-height: 1.7;
+    flex: 1;
 }
 
 .bio p {
@@ -141,4 +139,62 @@ h2 {
     overflow-x: auto;
     margin-top: 0.5rem;
     display: none;
+}
+
+/* Media queries para responsividad */
+@media screen and (max-width: 768px) {
+    .profile {
+        flex-direction: column-reverse;
+        gap: 1.5rem;
+    }
+
+    .profile-img {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .bio {
+        width: 100%;
+    }
+
+    main {
+        padding: 1rem;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .social-links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        justify-content: center;
+    }
+
+    .social-links a {
+        margin: 0 0.25rem;
+    }
+
+    .paper {
+        margin-bottom: 2rem;
+    }
+}
+
+/* Para pantallas muy pequeñas */
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .social-links {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .social-links a {
+        display: block;
+        margin: 0.5rem 0;
+    }
 } 
