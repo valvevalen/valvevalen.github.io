@@ -29,22 +29,16 @@ h1 {
 }
 
 .circular-image {
-    width: 200px !important;
-    height: 200px !important;
-    border-radius: 50% !important;
-    object-fit: cover !important;
-    overflow: hidden !important;
-    flex-shrink: 0 !important;
-    display: block !important;
-}
-
-.profile .circular-image {
-    border-radius: 50% !important;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
 }
 
 .bio {
     flex: 1;
-    max-width: 800px;
+    text-align: left;
 }
 
 .bio p {
@@ -56,10 +50,9 @@ h1 {
 }
 
 .social-links {
-    text-align: center;
-    font-size: 0.9rem;
-    color: #666;
-    margin-top: 2rem;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
 }
 
 .social-links a {
@@ -153,15 +146,33 @@ h2 {
 /* Media queries para responsividad */
 @media screen and (max-width: 768px) {
     .profile {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        gap: 1.5rem;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 1rem;
+        margin-top: 0;
     }
 
     .circular-image {
-        width: 150px !important;
-        height: 150px !important;
+        width: 80px;
+        height: 80px;
+        order: 2;
+    }
+
+    .bio {
+        order: 1;
+        text-align: left;
+    }
+
+    .social-links {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 1rem;
+    }
+
+    .social-links a {
+        display: inline;
+        margin: 0;
     }
 
     main {
@@ -170,17 +181,6 @@ h2 {
 
     h1 {
         font-size: 1.8rem;
-    }
-
-    .social-links {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 1rem;
-    }
-
-    .social-links a {
-        margin: 0 0.25rem;
     }
 
     .paper {
