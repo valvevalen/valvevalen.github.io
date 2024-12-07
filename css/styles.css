@@ -139,59 +139,51 @@ h2 {
     display: none;
 }
 
-/* Media queries para responsividad */
+/* Media queries para móvil */
 @media screen and (max-width: 768px) {
-    h1 {
-        margin-bottom: 1.5rem;
-        text-align: left;
-        font-size: 1.8rem;
+    body {
+        padding: 1rem;
     }
 
     .profile {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 1.5rem;
+        display: grid;
+        grid-template-areas: 
+            "title image"
+            "bio bio"
+            "social social";
+        gap: 1rem;
+        align-items: start;
     }
 
-    .circular-image {
-        width: 120px;
-        height: 120px;
+    h1 {
+        grid-area: title;
+        margin: 0;
+        font-size: 1.8rem;
         align-self: center;
     }
 
+    .circular-image {
+        grid-area: image;
+        width: 80px;
+        height: 80px;
+        justify-self: end;
+    }
+
     .bio {
+        grid-area: bio;
         text-align: left;
-        width: 100%;
+        margin-top: 1rem;
     }
 
     .social-links {
+        grid-area: social;
         display: flex;
-        flex-direction: row;
         justify-content: center;
-        flex-wrap: wrap;
-        gap: 0.5rem;
-        width: 100%;
-    }
-
-    main {
-        padding: 1rem;
-    }
-}
-
-/* Para pantallas muy pequeñas */
-@media screen and (max-width: 480px) {
-    h1 {
-        font-size: 1.5rem;
-    }
-
-    .social-links {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
+        gap: 1rem;
+        margin-top: 1rem;
     }
 
     .social-links a {
-        display: block;
-        margin: 0.5rem 0;
+        display: inline;
     }
 } 
