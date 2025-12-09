@@ -124,6 +124,12 @@ h2 {
     text-decoration: underline;
 }
 
+.tag-new {
+    color: #d93025;
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
 .paper-authors {
     font-size: 0.9rem;
     margin-bottom: 0.3rem;
