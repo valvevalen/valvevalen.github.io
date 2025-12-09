@@ -7,9 +7,29 @@ body {
     color: #333;
 }
 
+.nav-menu {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem 2rem 0;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-menu a {
+    color: #666;
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 400;
+    transition: color 0.2s;
+}
+
+.nav-menu a:hover {
+    color: #1a0dab;
+}
+
 main {
     max-width: 800px;
-    margin: 2rem auto;
+    margin: 1rem auto 2rem;
     padding: 0 2rem;
 }
 
